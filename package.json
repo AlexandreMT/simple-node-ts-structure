@@ -1,0 +1,14 @@
+{
+  "name": "node-ts-boilerplate",
+  "version": "1.0.0",
+  "main": "src/Index.ts",
+  "author": "Alexandre Matos <alexandremt03@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@types/node": "^13.7.6",
+    "eslint": "^6.8.0",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.8.2"
+  }
+}
