@@ -1,20 +1,33 @@
 {
-	"compilerOptions": {
-		"target": "es2019",
-		"module": "commonjs",
-    "noImplicitAny": true,
-    "noImplicitReturns": false,
-		"removeComments": true,
-		"esModuleInterop": true,
+  "compilerOptions": {
+    "target": "es2017",                          
+    "module": "commonjs",                     
+    "lib": ["es6"],                             
+    "allowJs": true,                       
+    "outDir": "./dist",                        
+    "rootDir": "./src",                       
+    "removeComments": true,                
+    "typeRoots": [
+      "./node_modules/@types",
+      "./src/@types"
+    ],                          
+    "esModuleInterop": true,                  
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,        
+    "emitDecoratorMetadata": true,         
+    "skipLibCheck": true,                     
     "forceConsistentCasingInFileNames": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "strictFunctionTypes": true,
-		"noUnusedLocals": true,
-		"resolveJsonModule": true,
-		"baseUrl": "./src",
-		"outDir": "./build"
-	},
-	"include": ["./src/**/*"],
-	"exclude": ["node_modules"]
+    "baseUrl": "./",
+    "paths": {
+      "@controllers/*": ["./src/controllers/*"],
+      "@services/*": ["./src/services/*"],
+      "@routes/*": ["./src/routes/*"],
+      "@models/*": ["./src/models/*"],
+      "@views/*": ["./src/views/*"],
+      "@config/*": ["./src/config/*"]
+    }
+  },
+  "include": [
+    "src/**/*"
+  ]
 }
