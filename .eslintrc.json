@@ -36,7 +36,7 @@
 		],
 		"no-sparse-arrays": "error",
 		"eqeqeq": "error",
-		"no-empty-function": "error",
+		"no-empty-function": "warn",
 		"require-await": "error",
 		"no-unused-vars": "off",
 		"eol-last": [
