@@ -10,22 +10,15 @@
     "typeRoots": [
       "./node_modules/@types",
       "./src/@types"
-    ], 
-    "esModuleInterop": true,                  
+    ],
+    "esModuleInterop": true,
     "resolveJsonModule": true,
-    "experimentalDecorators": true,        
-    "emitDecoratorMetadata": true,         
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": false,
     "baseUrl": "./",
-    "paths": {
-      "@controllers/*": ["./src/controllers/*"],
-      "@services/*": ["./src/services/*"],
-      "@routes/*": ["./src/routes/*"],
-      "@models/*": ["./src/models/*"],
-      "@views/*": ["./src/views/*"],
-      "@config/*": ["./src/config/*"],
-    },
+    "paths": {}
   },
   "include": [
     "src/**/*"
